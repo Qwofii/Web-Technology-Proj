@@ -1,0 +1,20 @@
+/* Target the hero-banner class in your HTML */
+.hero-banner {
+    /* 1. The Image and Overlay */
+    /* The first part is a semi-transparent gradient, the second is the image URL */
+    background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), 
+                      url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80');
+
+    /* 2. Positioning Rules */
+    background-size: cover;       /* Scales image to fill the entire section */
+    background-position: center;  /* Keeps the middle of the photo visible */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    
+    /* 3. Sizing the Container */
+    min-height: 400px;            /* Ensures the section is tall enough to see the graphic */
+    display: flex;                /* Centers your text and search box */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;                 /* Makes text white to pop against the dark background */
+}
