@@ -69,10 +69,11 @@
             type="date"
             name="dateofBirth"
             id="dateofBirth"
-            placeholder="dd/mm/yyyy"
+            placeholder="dd/mm/yyyy" 
             size="10"
             required="required"
           />
+          <!-- validate not for future??-->
         </p>
       </fieldset>
 
@@ -183,24 +184,37 @@
       </fieldset>
       <fieldset>
         <legend>Skills</legend>
-        <label for="HTML">??????</label>
+
+        <label for="React">React</label>
         <input
           type="checkbox"
-          id="HTML"
+          id="React"
           name="category[]"
-          value="HTML"
+          value="React"
+        />
+
+        <label for="Javascript">Javascript</label>
+        <input type="checkbox" id="Javascript" name="category[]" value="Javascript" />
+
+        <label for="Node.js">Node.js</label>
+        <input
+          type="checkbox"
+          id="Node.js"
+          name="category[]"
+          value="Node.js"
+        />
+
+        
+        <label for="Fluent in Alien">Fluent in Alien</label>
+        <input
+          type="checkbox"
+          id="Fluent"
+          name="category[]"
+          value="Fluent in Alien"
           checked="checked"
         />
 
-        <label for="CSS">???</label>
-        <input type="checkbox" id="CSS" name="category[]" value="CSS" />
-        <label for="Javascript">JavaScript</label>
-        <input
-          type="checkbox"
-          id="Javascript"
-          name="category[]"
-          value="Javascript"
-        />
+        
         <label for="PHP">PHP</label>
         <input type="checkbox" id="PHP" name="category[]" value="PHP" />
         <label for="MySQL">MySQL</label>
