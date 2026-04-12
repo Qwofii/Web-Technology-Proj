@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -6,87 +6,232 @@
     <meta name="keywords" content="About, company, team" />
     <meta name="author" content="Sinan, Sophia" />
     <title>VitalStream Pharma | Digital Medication Services</title>
-    <!--  <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="aboutstyle.css" />
   </head>
-
+  
   <body>
-    <p>Group Name</p>
-    <ul>
-      <li>
-        SASS
-        <ul>
-          <li>Class Day and Time</li>
-          <li>Thursday 4:30 PM</li>
-        </ul>
-      </li>
-    </ul>
+        <style>
+        /* CSS3 Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Helvetica, sans-serif;
+        }
 
-    <p>Member Contributions</p>
-    <dl>
-      <dt>Aadi</dt>
-      <dd>job.html</dd>
-      <dt>Sarvesh</dt>
-      <dd>index.html</dd>
-      <dt>Sinan</dt>
-      <dd>about.html</dd>
-      <dt>Sophia</dt>
-      <dd>apply.html</dd>
-    </dl>
+        body {
+            background-color: #f9fbfc;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
 
-     <p>Quotes</p>
-    <dl>
-      <dt>Aadi</dt>
-      <dd>"Wort Wort Wort"</dd>
-      <dd>Go! Go! Go!</dd>
-      <dt>Sarvesh</dt>
-      <dd>"zip zorp zep zarp zip zurp"</dd>
-      <dd>Only through hard work can many things be acomplished</dd>
-      <dt>Sinan</dt>
-      <dd>"bogos binted</dd>
-      <dd>Good luck!</dd>
-      <dt>Sophia</dt>
-      <dd></dd>
-      <dd></dd>
-    </dl>
+        /* Navigation Menu */
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid #27ae60;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
 
-    <table>
-    <caption>Fun Facts</caption>
-    
-    <thead>
-      <tr>
-        <th>Team Member</th>
-        <th>Dream Job</th>
-        <th>Coding snack</th>
-        <th>Hometown</th>
-      </tr>
-    </thead>
-    
-    <tbody>
-      <tr>
-        <td>Aadi</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-     <tr>
-        <td>Sarvesh</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-         <tr>
-        <td>Sinan</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-         <tr>
-        <td>Sophia</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-</table>
-  </body>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-placeholder {
+            width: 45px;
+            height: 45px;
+            background: #27ae60;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li { margin-left: 20px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Hero & Product Search */
+        .hero-banner {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .hero-banner h2 { font-size: 2.2rem; margin-bottom: 10px; }
+
+        .search-container {
+            margin-top: 25px;
+            display: inline-block;
+            background: white;
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .search-container input {
+            padding: 12px 25px;
+            width: 350px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 12px 30px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .search-container button:hover { background: #1a252f; }
+
+        /* Inventory Table */
+        .catalog-section { padding: 40px 10%; }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-table th, .product-table td {
+            border: 1px solid #edf2f7;
+            padding: 18px;
+            text-align: left;
+        }
+
+        .product-table th {
+            background-color: #f1f8f4;
+            color: #27ae60;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .category-cell {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            color: #7f8c8d;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 10%;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #2ecc71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="aboutstyle.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="brand-area">
+                <div class="logo-placeholder">VP</div>
+                <div>
+                    <h1 style="font-size: 1.3rem; color: #27ae60;">NexCare Digital Services</h1>
+                    <p style="font-size: 0.75rem; color: #7f8c8d; font-style: italic;">Delivering care beyond Horizons.</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Prescriptions</a></li>
+                <li><a href="#">OTC Meds</a></li>
+                <li><a href="#">Wellness</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        <h2>About Us</h2>
+        <p>At NexCare, we are dedicated to revolutionizing the way you access healthcare across the stars. Our mission is to provide seamless, warp-speed, and species-specific pharmaceutical services that empower you to master your biology—no matter which sector of the multiverse you call home.</p>
+    </section>
+
+    <main>
+        <section class="catalog-section">
+            <h2>Our Story</h2>
+            <p>Founded by a team of intergalactic healthcare visionaries, NexCare was born from the desire to break down barriers and bring personalized medicine to every corner of the cosmos. We understand that in a universe filled with diverse lifeforms, one-size-fits-all solutions simply won't cut it. That's why we've harnessed cutting-edge technology and a vast network of galactic pharmacies to create a platform that delivers tailored healthcare solutions at the speed of light.</p>
+        </section>
+
+        <section class="catalog-section">
+            <h1>Group Details</h1>
+            <p>Our team is a vibrant mix of bioengineers, pharmacologists, and cosmic health enthusiasts who are passionate about pushing the boundaries of what's possible in healthcare. We come from all walks of life and all corners of the universe, united by a common goal: to make healthcare accessible, personalized, and efficient for everyone, everywhere.</p>
+            <br>
+            <ul>
+              <li>Group Name: <strong>SASS</strong></li>
+                <ul>
+                    <li>Class Day: Thursday</li>
+                    <li>Class Time: 4:30 PM - 6:30 PM</li>
+                </ul>
+            </ul>
+        </section>
+    </main>
+
+        <section class="catalog-section">
+            <h1>Member Contributions and Quotes</h1>
+            
+            <dl>
+                <dt><strong>Sinan</strong></dt>
+                <dd>Contribution: Designed and developed the user interface of the about page.</dd>
+                <dd>Quote: "zinky zoogle zeep vorp beep beep"</dd>
+
+                <dt><strong>Sophia</strong></dt>
+                <dd>Contribution: Designed and developed the user interface of the jobs page.</dd>
+                <dd>Quote: "Fais de ta vie un rêve et d'un rêve une réalité."</dd>
+
+                <dt><strong>Aadi</strong></dt>
+                <dd>Contribution: Designed and developed the user interface of the application page.</dd>
+                <dd>Quote: "Wort Wort Wort."</dd>
+
+                <dt><strong>Sarvesh</strong></dt>
+                <dd>Contribution: Designed and developed the user interface of the index page.</dd>
+                <dd>Quote: "zip zorp zep zarp zip zurp."</dd>
+
+            </dl>
+        </section>
+    </main>
+
+</body>
 </html>
