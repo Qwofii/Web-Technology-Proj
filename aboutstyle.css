@@ -33,3 +33,153 @@ h3 {
             margin-left: 20px;
             margin-bottom: 10px;
         }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f9fbfc;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        /* Navigation Menu */
+        header {
+            background: #ffffff;
+            border-bottom: 4px solid #27ae60;
+            padding: 10px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-area {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-placeholder {
+            width: 45px;
+            height: 45px;
+            background: #27ae60;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li { margin-left: 20px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        /* Hero & Product Search */
+        .hero-banner {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .hero-banner h2 { font-size: 2.2rem; margin-bottom: 10px; }
+
+        .search-container {
+            margin-top: 25px;
+            display: inline-block;
+            background: white;
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .search-container input {
+            padding: 12px 25px;
+            width: 350px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+        }
+
+        .search-container button {
+            padding: 12px 30px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .search-container button:hover { background: #1a252f; }
+
+        /* Inventory Table */
+        .catalog-section { padding: 20px 10%; }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-table th, .product-table td {
+            border: 1px solid #edf2f7;
+            padding: 18px;
+            text-align: left;
+        }
+
+        .product-table th {
+            background-color: #f1f8f4;
+            color: #27ae60;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .category-cell {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            color: #7f8c8d;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            padding: 40px 10%;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #2ecc71;
+            text-decoration: none;
+            margin: 0 10px;
+        }
