@@ -168,3 +168,15 @@
             text-decoration: none;
             margin: 0 10px;
         }
+
+        .page-layout {
+            display: flex;
+        }
+
+        aside.sidebar {
+            float: right;
+            width: 25%;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #27ae60;
+        }
