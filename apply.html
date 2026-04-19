@@ -7,6 +7,20 @@
     <meta name="author" content="Sophia" />
     <title>Apply for the position</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .button {
+        background-color: rgba(39, 174, 96, 1);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
   </head>
 
   <body>
@@ -40,10 +54,10 @@
       method="post"
       action="http://mercury.swin.edu.au/it000000/formtest.php"
     >
-      <h2 class="apply-sections"> General Details</h2>
+      <h2 class="apply-sections">General Details</h2>
       <div class="apply-container">
         <div class="apply-element">
-          <label for="jobRef">Job Reference Number</label>
+          <label for="jobRef">Job Reference Number*</label>
           <input
             class="apply-fields"
             type="text"
@@ -58,7 +72,7 @@
         <br />
 
         <div class="apply-element">
-          <label for="firstName">First Name</label>
+          <label for="firstName">First Name*</label>
           <input
             class="apply-fields"
             type="text"
@@ -72,7 +86,7 @@
         </div>
 
         <div class="apply-element">
-          <label for="lastName">Last Name</label>
+          <label for="lastName">Last Name*</label>
           <input
             class="apply-fields"
             type="text"
@@ -86,7 +100,7 @@
         </div>
 
         <div class="apply-element">
-          <label for="date">Date of birth</label>
+          <label for="date">Date of birth*</label>
           <input
             type="date"
             class="apply-fields"
@@ -102,7 +116,7 @@
       </div>
 
       <div style="padding: 1%">
-        <p>Gender</p>
+        <p>Gender*</p>
 
         <input type="radio" id="female" name="gender" value="female" required />
         <label for="female">Female</label>
@@ -129,7 +143,7 @@
       <h2 class="apply-sections">Contact Details</h2>
       <div class="apply-container">
         <div class="apply-element">
-          <label for="streetAddress">Street address</label>
+          <label for="streetAddress">Street address*</label>
           <input
             class="apply-fields"
             type="text"
@@ -141,7 +155,7 @@
           />
         </div>
         <div class="apply-element">
-          <label for="suburb">Suburb/Town</label>
+          <label for="suburb">Suburb/Town*</label>
           <input
             class="apply-fields"
             type="text"
@@ -154,7 +168,7 @@
         </div>
 
         <div class="apply-element">
-          <label for="state">State</label>
+          <label for="state">State*</label>
           <select name="state" id="state" required class="apply-fields">
             <option value="">Please Select</option>
             <option value="VIC">VIC</option>
@@ -169,7 +183,7 @@
         </div>
 
         <div class="apply-element">
-          <label for="postcode">Postcode</label>
+          <label for="postcode">Postcode*</label>
           <input
             class="apply-fields"
             type="text"
@@ -183,7 +197,7 @@
         </div>
 
         <div class="apply-element">
-          <label for="email">Email</label>
+          <label for="email">Email*</label>
           <input
             class="apply-fields"
             type="text"
@@ -195,7 +209,7 @@
           />
         </div>
         <div class="apply-element">
-          <label for="phone">Phone number</label>
+          <label for="phone">Phone number*</label>
           <input
             class="apply-fields"
             type="text"
@@ -204,6 +218,7 @@
             id="phone"
             maxlength="12"
             size="12"
+            placeholder="0400 000 000"
             required="required"
           />
         </div>
@@ -213,20 +228,20 @@
       <div style="padding: 1%">
         <input type="checkbox" id="React" name="category[]" value="React" />
         <label for="React">React</label>
-        <br/>
+        <br />
         <input
           type="checkbox"
           id="Javascript"
           name="category[]"
           value="Javascript"
         />
-        
+
         <label for="Javascript">Javascript</label>
-        <br/>
+        <br />
 
         <input type="checkbox" id="Node.js" name="category[]" value="Node.js" />
         <label for="Node.js">Node.js</label>
-        <br/>
+        <br />
 
         <input
           type="checkbox"
@@ -236,32 +251,32 @@
           checked="checked"
         />
         <label for="Fluent in Alien">Fluent in Alien</label>
-        <br/>
+        <br />
 
         <input type="checkbox" id="PHP" name="category[]" value="PHP" />
         <label for="PHP">PHP</label>
-        <br/>
+        <br />
         <input type="checkbox" id="MySQL" name="category[]" value="MySQL" />
         <label for="MySQL">MySQL</label>
-        <br/>
-        
+        <br />
       </div>
       <div class="apply-element">
-      <label for="otherSkills">Other skills</label>
+        <label for="otherSkills">Other skills</label>
 
-      <textarea
-    
-        id="otherSkills"
-        name="otherSkills"
-        rows="20"
-        cols="40"
-        placeholder="List other skills here..."
-      >
-      </textarea>
+        <textarea
+          id="otherSkills"
+          name="otherSkills"
+          rows="12"
+          cols="40"
+          placeholder="List other skills here..."
+        >
+        </textarea>
       </div>
 
-      <input type="submit" value="Book" />
-      <input type="reset" value="Reset form" />
+      <div class="apply-buttons">
+        <input type="submit" value="Book" class="button" />
+        <input type="reset" value="Reset form" class="button" />
+      </div>
     </form>
     <footer>
       <div class="footer-links">
