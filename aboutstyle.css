@@ -1,3 +1,6 @@
+
+/* Credit goes to Sarvesh for the CSS styling. He got help from friends and minimal AI usage to complete it */
+
 body {
     font-family: 'Segoe UI', Helvetica, sans-serif;
     margin: 0;
@@ -182,4 +185,53 @@ h3 {
             color: #2ecc71;
             text-decoration: none;
             margin: 0 10px;
+        }
+
+         figure {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        figure img {
+            width: 60%;
+            max-width: 400px;
+            border-radius: 10px;
+            background: #dfe6e9;
+            padding: 20px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #edf2f7;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f8f4;
+            color: #27ae60;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 10px;
         }
