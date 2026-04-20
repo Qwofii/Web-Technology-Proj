@@ -65,7 +65,7 @@ header {
 /* Hero Banner */
 .hero-banner {
     background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), 
-                      url('https://media.discordapp.net/attachments/1484084564149407864/1495376220408385576/content.png?ex=69e60521&is=69e4b3a1&hm=6960b12fcb250488ca7681a207eb95f5593fd6290aaf7ec0a46c9a89bfe57ff9&=&format=webp&quality=lossless&width=1735&height=800');
+                      url('https://cdn.discordapp.com/attachments/1484084564149407864/1495376220408385576/content.png?ex=69e6ade1&is=69e55c61&hm=418bfe59b9b1199e7f9ef2ff080d7aedf8be4d21902de12cd0e13fb56a9970bb&');
     background-size: cover;       
     background-position: center;  
     background-repeat: no-repeat; 
@@ -134,13 +134,22 @@ header {
     text-align: center;
 }
 
-/* Footer Section - Updated Background */
+/* Footer Section */
 footer {
-    background: #2c3e50; /* Charcoal/Navy from your image */
-    color: #ffffff;      /* Text changed to white for readability */
-    padding: 40px 10%;
+    background: #2c3e50;
+    color: #ffffff;
+    padding: 50px 10%;
     margin-top: 50px;
     text-align: center;
+}
+
+.acknowledgement {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 25px;
 }
 
 .footer-links {
@@ -153,7 +162,7 @@ footer {
     margin: 0 5px;
 }
 
-footer p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+.copyright {
+    font-size: 0.85rem;
+    opacity: 0.7;
 }
