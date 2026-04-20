@@ -19,6 +19,7 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        border-radius: 4px;
       }
     </style>
   </head>
@@ -109,8 +110,6 @@
             size="10"
             required="required"
           />
-
-          <!-- validate not for future??-->
         </div>
       </div>
 
@@ -134,7 +133,7 @@
         <label for="notspecified">N/S</label>
         <p></p>
 
-        <input type="radio" id="prefernot" name="gender" value="??" />
+        <input type="radio" id="prefernot" name="gender" value="Prefer not to say" />
         <label for="prefernot">Prefer not to say</label>
         <p></p>
       </div>
@@ -247,7 +246,6 @@
           id="Fluent"
           name="category[]"
           value="Fluent in Alien"
-          checked="checked"
         />
         <label for="Fluent in Alien">Fluent in Alien</label>
         <br />
@@ -267,9 +265,7 @@
           name="otherSkills"
           rows="12"
           cols="40"
-          placeholder="List other skills here..."
-        >
-        </textarea>
+          placeholder="List other skills here..."></textarea>
       </div>
 
       <div class="apply-buttons">
