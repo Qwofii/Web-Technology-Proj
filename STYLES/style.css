@@ -109,7 +109,7 @@
         .hero-banner {
             background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(../LOGO/content.png);
             background-size: cover;
-            background-position: 10% 90%;
+            background-position: 10% 50%;
             color: white;
             padding: 40px 10%;
             text-align: center;
