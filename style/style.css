@@ -16,9 +16,11 @@ body {
 header {
   background: #ffffff;
   border-bottom: 4px solid #27ae60;
+  padding: 10px 5%;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
@@ -38,7 +40,18 @@ header {
   height: 50px;
   width: auto;
 }
-
+.logo-placeholder {
+  width: 45px;
+  height: 45px;
+  background: #27ae60;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 15px;
+}
 .brand-name {
   font-size: 1.3rem;
   color: #27ae60;
@@ -56,17 +69,30 @@ header {
   gap: 20px;
 }
 
+.nav-links li {
+  margin-left: 20px;
+}
 .nav-links a {
   text-decoration: none;
   color: #2c3e50;
   font-weight: bold;
 }
 
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #27ae60;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
 /* Hero Banner */
 .hero-banner {
-  background-image:
-    linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)),
-    url("https://media.discordapp.net/attachments/1484084564149407864/1495376220408385576/content.png?ex=69e60521&is=69e4b3a1&hm=6960b12fcb250488ca7681a207eb95f5593fd6290aaf7ec0a46c9a89bfe57ff9&=&format=webp&quality=lossless&width=1735&height=800");
+  background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(../images/content.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,6 +104,21 @@ header {
   color: white;
   text-align: center;
 }
+
+ .hero-banner-about {
+            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(../images/aboutus.png);
+            background-size: cover;
+            background-position: 10% 90%;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            min-height: 490px;
+            justify-content: center;
+            align-items: center;
+            /* Animation */
+            position: relative;
+            overflow:hidden;
+        }
 
 /* Search Box */
 .search-container {
@@ -135,6 +176,28 @@ header {
   font-weight: bold;
   text-align: center;
 }
+
+
+        aside.sidebar {
+            float: right;
+            width: 25%;
+            margin: 3rem;
+            padding: 1rem;
+            border: 1px solid #1a5c36;
+        }
+
+
+h1-white{
+    color: #feffff;
+    margin-bottom: 20px;
+}
+
+h3-jobs {
+    color: #1a5c36;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 
 /* Footer Section - Updated Background */
 footer {
@@ -207,6 +270,27 @@ footer p {
   top: 17%; /* determines how much of the top is visible due to scrolling up/down */
 }
 
+
+        dl {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            margin-top: 30px;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #27ae60;
+            margin-top: 15px;
+        }
+
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+
 .apply-fields {
   /* Settings for input fields on apply page */
 
@@ -256,4 +340,69 @@ textarea {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+figure {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        figure img {
+            width: 60%;
+            max-width: 400px;
+            border-radius: 10px;
+            background: #dfe6e9;
+            padding: 20px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #edf2f7;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1f8f4;
+            color: #27ae60;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+
+        .job-container {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    row-gap: 5;
+    gap: 2rem;
+}
+
+.job-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 1rem;
 }
