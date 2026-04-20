@@ -119,7 +119,7 @@ h3 {
 
         /* Hero & Product Search */
         .hero-banner {
-            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(aboutus.png);
+            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(../images/aboutus.png);
             background-size: cover;
             background-position: 10% 90%;
             color: white;
