@@ -14,7 +14,9 @@ Installation:
 None required - just a website via browser
 
 Github pages: https://qwofii.github.io/Web-Technology-Proj/
+
 Jira: https://webtechprojectsassignment1.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiOTkwOTJiYzI1MDhlNDIyOGI4NDFhN2U3N2QzZDFlYzEiLCJwIjoiaiJ9
+
 Meetings notes: https://liveswinburneeduau-my.sharepoint.com/:w:/g/personal/103024647_student_swin_edu_au/IQBYOuAW5awYS48vgM3N7PMHAYHRUW1-c64HbpRgM5TRlH8?e=hT4s75
 
 Contributing:
