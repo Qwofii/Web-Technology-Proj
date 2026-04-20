@@ -98,7 +98,7 @@ h3 {
 
         .nav-links a {
             text-decoration: none;
-            color: #27ae60;
+            color: #2c3e50;
             font-weight: 600;
             font-size: 0.95rem;
         }
@@ -126,7 +126,7 @@ h3 {
             z-index: 0;
 
             background: linear-gradient(135deg, #1488D4, #41B7B1, #2fa6c2, #7FD3C8);
-            background-size: 400% 400%;
+            background-size: 400% 40%;
 
             animation: gradientShift 2.5s ease infinite;
             opacity: 0.3; 
