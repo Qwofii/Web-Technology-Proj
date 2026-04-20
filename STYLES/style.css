@@ -178,6 +178,19 @@
             color: #7f8c8d;
         }
 
+        main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+        aside.sidebar {
+            float: right;
+            width: 25%;
+            margin: 3rem;
+            padding: 1rem;
+            border: 1px solid #1a5c36;
+        }
+
         /* Footer */
         footer {
             background: #2c3e50;
@@ -195,14 +208,6 @@
 
         .page-layout {
             display: flex;
-        }
-
-        aside.sidebar {
-            float: right;
-            width: 25%;
-            margin: 3rem;
-            padding: 1rem;
-            border: 1px solid #1a5c36;
         }
 
         body {
