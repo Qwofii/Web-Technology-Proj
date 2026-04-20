@@ -160,7 +160,7 @@ footer p {
 .applyhero {
     /* 1. The Image and Overlay */
   /* The first part is a semi-transparent gradient, the second is the image URL */
-  background-color: rgba(39, 174, 96, 1);
+  background-color: #2c3e50;
   opacity: 100;
 
   /* 2. Positioning Rules */
@@ -178,7 +178,7 @@ footer p {
  
   z-index: 1000;
   position: sticky;
-  top: 9%;
+  top: 11%;
 }
 
 .apply-sections {
@@ -201,7 +201,7 @@ footer p {
  
   z-index: 999;
   position: sticky;
-  top: 15%;
+  top: 17%;
 }
 
 .apply-fields{
