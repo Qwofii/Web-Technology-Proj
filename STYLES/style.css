@@ -107,10 +107,15 @@
 
         /* Hero & Product Search */
         .hero-banner {
-            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            background-image: linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)), url(../LOGO/content.png);
+            background-size: cover;
+            background-position: 10% 90%;
             color: white;
-            padding: 50px 10%;
+            padding: 40px 10%;
             text-align: center;
+            min-height: 490px;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero-banner h2 { font-size: 2.2rem; margin-bottom: 10px; }
