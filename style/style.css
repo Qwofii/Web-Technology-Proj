@@ -97,7 +97,7 @@ color: #1a5c36; /* Contrast Fix */
     linear-gradient(rgba(44, 62, 80, 0.7), rgba(39, 174, 96, 0.7)),
     url(../images/content.png);
   background-size: cover;
-  background-position: center;
+  background-position: center;/* Sinan: "had to use AI to help with background-position"*/
   background-repeat: no-repeat;
   min-height: 400px;
   display: flex;

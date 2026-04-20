@@ -26,4 +26,5 @@ Contributing:
 3. Sinan Alam
 4. Sophia Nguyen
 
+AI (Gemini, Nano Banana Pro, Copilot) was utilised to assist with generating logos and images
 
