@@ -129,7 +129,7 @@ h3 {
             background-size: 400% 400%;
 
             animation: gradientShift 2.5s ease infinite;
-            opacity: 0.39; 
+            opacity: 0.3; 
         }
 
         .hero-banner > * {
@@ -220,7 +220,7 @@ h3 {
         .footer-links a {
             color: #2ecc71;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 13px;
         }
 
          figure {
